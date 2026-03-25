@@ -14,7 +14,9 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://cuddly-tribble-r4w9g6w4jjwgf5qrg-3000.app.github.dev",
+        "https://revyola-frontend.vercel.app",
+        "https://app-demo.revyola.com",
+        "http://localhost:3000",
     ],
     allow_credentials=False,
     allow_methods=["*"],
