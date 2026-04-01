@@ -1,0 +1,14 @@
+
+Request for reimbursement review
+
+Payer: UHC
+Claims: 1
+Variance: $25.40
+
+We are submitting a request for review based on a reimbursement variance identified post-payment.
+
+The claim appears underpaid relative to expected reimbursement based on billed configuration.
+
+Requested Action:
+Please review and reprocess if appropriate.
+

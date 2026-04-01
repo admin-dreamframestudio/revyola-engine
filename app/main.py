@@ -8,8 +8,11 @@ from app.rules.modifier_rules import apply_modifier_rules
 from app.rules.icd_rules import get_icd_explainability
 from app.rules.bundling_rules import detect_bundling_patterns
 from app.services.drift import detect_payer_drift
+from app.api.rcm import router as rcm_router
 
 app = FastAPI()
+
+app.include_router(rcm_router)
 
 app.add_middleware(
     CORSMiddleware,
