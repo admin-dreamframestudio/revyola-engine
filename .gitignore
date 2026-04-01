@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 
 app/**/__pycache__/
+.venv/
+__pycache__/
+*.pyc
