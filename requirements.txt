@@ -2,3 +2,6 @@ fastapi
 uvicorn[standard]
 pandas
 python-multipart
+httpx
+reportlab
+pillow

@@ -9,10 +9,13 @@ from app.rules.icd_rules import get_icd_explainability
 from app.rules.bundling_rules import detect_bundling_patterns
 from app.services.drift import detect_payer_drift
 from app.api.rcm import router as rcm_router
+from app.api.provider_intelligence import router as provider_intelligence_router
+
 
 app = FastAPI()
 
 app.include_router(rcm_router)
+app.include_router(provider_intelligence_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,6 +23,7 @@ app.add_middleware(
         "https://revyola-frontend.vercel.app",
         "https://app-demo.revyola.com",
         "http://localhost:3000",
+        "https://cuddly-tribble-r4w9g6w4jjwgf5qrg-3000.app.github.dev",
     ],
     allow_credentials=False,
     allow_methods=["*"],
