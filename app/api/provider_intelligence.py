@@ -280,6 +280,10 @@ async def get_npi_diagnostic_pdf(npi: str, download: bool = False):
         bottomMargin=14,
     )
 
+    doc.title = f"Revyola Revenue Diagnostic - {diagnostic.provider_name}"
+    doc.author = "Revyola"
+    doc.subject = "Executive Revenue Leakage Diagnostic"
+    doc.creator = "Revyola Revenue Intelligence"
     styles = getSampleStyleSheet()
     midnight = colors.HexColor("#0f172a")
     navy = midnight
